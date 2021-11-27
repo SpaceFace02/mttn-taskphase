@@ -1,0 +1,11 @@
+extends base
+
+block content 
+  h1.results-heading Your results
+  if (requiredPapers)
+    each paper in requiredPapers
+      p.paper-title 
+        a(href=paper)=paper 
+
+  else 
+    p.paper-title No papers found

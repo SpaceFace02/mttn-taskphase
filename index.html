@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+    />
+
+    <title>MTTN Task-Phase</title>
+  </head>
+  <body>
+    <h1 class="heading">QUESTION PAPER BANK!</h1>
+
+    <form action="http://localhost:3000/papers" method="GET" class="_form">
+      <select class="form-select" aria-label="Stream" name="stream" required>
+        <option selected>Select your stream</option>
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+      </select>
+
+      <select
+        class="form-select"
+        aria-label="Semester"
+        name="semester"
+        required
+      >
+        <option selected>Select your semester</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-primary btn-lg">SEARCH</button>
+      </div>
+    </form>
+  </body>
+</html>
