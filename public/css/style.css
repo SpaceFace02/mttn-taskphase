@@ -34,6 +34,16 @@
   outline: none;
   border: none;
   border-radius: 5px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+._form button:hover {
+  padding: 0.7rem 2rem;
+  background-color: #6092ff;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 
 .paper-title {

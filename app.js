@@ -19,7 +19,7 @@ app.use(express.json());
 app.use("/papers", papersRouter);
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Welcome to MTTN Taskphase, please run the index.html file.");
 });
 
 module.exports = app;

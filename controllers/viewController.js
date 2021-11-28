@@ -1,5 +1,0 @@
-exports.getWelcomeForm = async (req, res, next) => {
-  res.status(200).render("form", {
-    title: "Welcome",
-  });
-};

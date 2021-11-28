@@ -21,7 +21,6 @@ mongoose
     console.log(err);
   });
 
-// Change if deploying
 const port = process.env.PORT;
 
 const server = app.listen(port, () => {
@@ -39,7 +38,6 @@ process.on("unhandledRejection", (err) => {
 process.on("SIGTERM", () => {
   console.log("👋🏻❌SIGTERM RECEIVED. Shutting down gracefully");
   server.close(() => {
-    // No need to close it as SIGTERM automatically shuts down the server. SIGTERM is a polite way to terminate a program.
     console.log("💥 Process Terminated");
   });
 });
